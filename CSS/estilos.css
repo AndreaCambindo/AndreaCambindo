@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /*para hacer scroll suave por la pagina al seleccionar una opcion que lleva a otra*/
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero{
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.699) 0%, rgba(51, 8, 103, 0.689) 100%), url("../IMG/header.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.textos-hero{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-hero h1{
+    font-size: 60px;
+    padding: 1%;
+}
+
+.textos-hero p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-hero a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: rgba(0, 65, 84, 0.719);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilos Generales*/
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+
+.contenedor{
+    padding: 80px 0;
+}
+
+.titulo{
+    font-weight: 300px;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;    
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+.titulo.right{
+    text-align: right;
+}
+
+/* Section */
+
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+
+.website img{
+    width: 50%;
+}
+
+.website .contenedor-textos-main{
+    width: 40%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: black;
+}
+
+/* Información */
+
+.info{
+    background: #6e45e2;
+    color: #fff;
+}
+
+.info p{
+    text-align: center;
+    padding: 8%;
+}
+
+.conocimientos{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+}
+
+.icono-conocimiento{
+    width: 20%;
+    text-align: center;
+    height: 200px;
+}
+
+.icono-conocimiento i{
+    margin: 10px 0 30px 0;
+    color: #fff;
+    font-size: 50px;
+}
+
+/* Cards */
+
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card i{
+    margin: 30px 0 20px 0;
+    color: #6e45e2;
+    font-size: 50px;
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Galeria */
+
+.galeria{
+    background: #f2f2f2;
+}
+
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.galeria-cont>img{
+    width: 15%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Info2 */
+
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8%;
+}
+
+.last-section img{
+    width: 35%;
+}
+
+.last-section .contenedor-textos-main{
+    width: 60%;
+}
+
+/* Footer */
+
+footer{
+    background:#6e45e2;
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 8%;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"],
+input[type="email"],
+input[type="celular"]{
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: #6e45e2;
+    background: #fff;
+}
+
+.wsp{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    bottom: 20px;
+    right: 15px;
+    background: #34a91d;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .3);
+    z-index: 100;
+}
+
+.wsp:hover{
+    text-decoration: none;
+    color: #34a91d;
+    background: #fff;
+}
+
+@media screen and (max-width:820px){
+    .textos-hero h1{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .textos-hero p{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    /*Estilos Generales*/
+    .titulo{
+        font-size: 30px;
+    }
+
+    .titulo.left{
+        text-align: center;
+    }
+    .info p{
+        text-align: center;
+    }
+
+    /* Section*/
+    .website{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 100%;
+    }
+
+    .website .contenedor-textos-main{
+        width: 100%;
+    }
+
+    /*Conocimientos*/
+    .icono-conocimiento{
+        width: 30%;
+    }   
+
+    /*Cards*/
+    .card{
+        width: 77%;
+        margin-bottom: 20px;
+    }
+    
+    /*Galeria*/
+    .galeria-cont>img{
+        width: 30%;
+    }
+
+    /*Last*/
+    .last-section img{
+        width: 98%;
+    }
+
+    .last-section .contenedor-textos-main{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+}    
+
+    @media screen and (max-width:400px){
+        .titulo,
+        .textos-hero h1{
+            font-size: 25px;
+        }
+        
+        .textos-hero p{
+            font-size: 15px;
+        }    
+        
+        .icono-conocimiento{
+            height: 300px;
+        }      
+
+        .card{
+            height: 300px;
+        }
+        
+        .website .contenedor-textos-main{
+            margin-bottom: 30px;
+        }
+
+        .galeria-cont>img{
+            width: 60%;
+        }
+    }
+
+
